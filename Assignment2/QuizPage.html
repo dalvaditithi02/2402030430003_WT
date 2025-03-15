@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Quiz - Fashion Aura</title>
+    <link rel="stylesheet" href="QuizPageStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="wrapper"> <!-- New wrapper for flexbox -->
+        
+        <!-- Header -->
+        <header class="navbar">
+            <div class="navbar-left">
+                <div class="logo">
+                    <img src="Images/Logo.PNG" alt="Fashion Aura Logo">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="AboutUsPage.html">About Us</a></li>
+                        <li><a href="BlogPage.html">Blog</a></li>
+                        <li><a href="OutfitSuggestions.html">Outfit Suggestions</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Authentication Buttons -->
+            <div class="auth-buttons">
+                <button class="login" onclick="window.location.href='loginpage.html'">Login</button>
+                <button class="register" onclick="window.location.href='registerpage.html'">Register</button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content"> <!-- New div for content -->
+            <div class="quiz-container">
+                <h2>Fashion Quiz</h2>
+                <p>Answer a few questions to get personalized fashion advice!</p>
+
+                <form id="quiz-form">
+                    <label>1. What is your favorite color?</label>
+                    <select required>
+                        <option value="">Select</option>
+                        <option value="black">Black</option>
+                        <option value="white">White</option>
+                        <option value="blue">Blue</option>
+                        <option value="red">Red</option>
+                    </select>
+
+                    <label>2. What style do you prefer?</label>
+                    <select id="style-select" required>
+                        <option value="">Select</option>
+                        <option value="casual" data-image="Images/casual.jpg">Casual</option>
+                        <option value="Traditional" data-image="Images/traditional.jpg">Traditional</option>
+                        <option value="Formal" data-image="Images/formal.jpg">Formal</option>
+                        <option value="bohemian" data-image="Images/Bohemian.jpg">Bohemian</option>
+                    </select>
+
+                    <!-- Image Preview Section -->
+                    <div id="image-preview" class="image-preview-container">
+                        <img id="preview-img" src="" alt="Selected Style" />
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-left">
+                <p><a href="#">Terms & Conditions</a> | <a href="ContactUsPage.html">Contact Us</a></p>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </footer>
+
+    </div> <!-- Closing wrapper -->
+
+    <script>
+        document.getElementById("style-select").addEventListener("change", function() {
+            let selectedOption = this.options[this.selectedIndex];
+            let imageSrc = selectedOption.getAttribute("data-image");
+            let previewImg = document.getElementById("preview-img");
+
+            if (imageSrc) {
+                previewImg.src = imageSrc;
+                previewImg.style.display = "block";
+            } else {
+                previewImg.style.display = "none";
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outfit Suggestions - Fashion Aura</title>
+    <link rel="stylesheet" href="OutfitSuggestionsStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="navbar-left">
+            <div class="logo">
+                <img src="Images/Logo.PNG" alt="Fashion Aura Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="AboutUsPage.html">AboutUs</a></li>
+                    <li><a href="BlogPage.html">Blog</a></li>
+                    <li><a href="OutfitSuggestions.html">Outfit Suggestions</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="auth-buttons">
+            <button class="login" onclick="window.location.href='loginpage.html'">Login</button>
+            <button class="register" onclick="window.location.href='registerpage.html'">Register</button>
+        </div>
+    </header>
+
+    <!-- Chatbot Section -->
+    <section class="chat-container">
+        <h2>Personalized Outfit Suggestion</h2>
+        <div class="chat-box" id="chat-box">
+            <div class="chat-message bot">
+                
+
+                <span>WELCOME TO FASHION AURA</span>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-left">
+            <p><a href="#">Terms & Conditions</a> | <a href="ContactUsPage.html">Contact Us</a></p>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <script src="chatScript.js"></script>
+
+</body>
+
+</html>

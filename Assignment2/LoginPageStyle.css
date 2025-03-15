@@ -1,0 +1,79 @@
+/* Reset Styles */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: url('Images/backlogin.avif') center/cover no-repeat;
+}
+
+/* Login Box */
+.login-container {
+    text-align: center;
+    padding: 30px;
+    width: 350px;
+    height: 400px;
+    background: rgba(231, 224, 224, 0.7);
+    color: black; /* Changed to black */
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+}
+
+/* Heading */
+.login-container h2 {
+    margin-bottom: 20px;
+    color: black; /* Changed to black */
+}
+
+/* Form */
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+.login-container label {
+    text-align: left;
+    margin: 10px 0 5px;
+    color: black; /* Changed to black */
+}
+
+/* Input Fields */
+.login-container input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    color: black; /* Changed to black */
+}
+
+/* Login Button */
+.login-container button {
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.login-container button:hover {
+    background: #333;
+}
+
+/* Register Link */
+.login-container p {
+    color: black; /* Changed to black */
+}
+
+.login-container p a {
+    color: black; /* Changed to black */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-container p a:hover {
+    text-decoration: underline;
+}

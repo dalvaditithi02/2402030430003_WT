@@ -1,0 +1,212 @@
+/* Reset Styles */
+body, h1, h2, p, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, sans-serif;
+}
+
+/* Background Image */
+body {
+    background: url('Images/blogbg.webp') center/cover no-repeat;
+    background-attachment: fixed; /* Keeps the image static while scrolling */
+    color: white; /* Ensures text remains readable */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: white;
+    border-bottom: 2px solid #ddd;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo */
+.navbar .logo img {
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+}
+
+/* Navbar Links */
+.navbar nav ul {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar nav ul li a {
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.auth-buttons button {
+    margin-left: 10px;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.login {
+    background: white;
+    border: 1px solid black;
+}
+
+.register {
+    background: black;
+    color: white;
+}
+
+/* Blog Container */
+.blog-container {
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.85); /* Lighter container color */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+/* Blog Posts */
+.blog-post {
+    background: rgba(238, 233, 233, 0.9); /* Light container for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.blog-post img {
+    width: 30%;
+    height: 30%;
+    border-radius: 10px;
+}
+
+.blog-post h2 {
+    font-size: 1.8em;
+    margin: 15px 0;
+}
+
+.blog-post p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.blog-post a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: 0.3s;
+}
+
+.blog-post a:hover {
+    background: #333;
+}
+
+/* Blog Detail Page */
+.blog-detail {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+.blog-detail img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.blog-detail h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.blog-detail p {
+    font-size: 1.3em;
+    color: #444;
+    line-height: 1.8;
+    margin-top: 15px;
+}
+
+/* Back Button */
+.back-btn {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin: 20px;
+}
+
+.back-btn:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #111;
+    color: white;
+    margin-top: 50px;
+}
+
+/* Left: Terms & Contact */
+.footer-left p a {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+/* Right: Social Media Icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: inline-block;
+    text-decoration: none;
+    background: white;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.social-icons a i {
+    font-size: 24px;
+    color: black;
+}
+
+.social-icons a:hover {
+    background: #444;
+}
+
+.social-icons a:hover i {
+    color: white;
+}

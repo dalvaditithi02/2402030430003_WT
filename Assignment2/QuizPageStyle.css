@@ -1,0 +1,189 @@
+/* Reset Styles */
+body, h2, p, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, sans-serif;
+}
+
+/* Make body full height */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Wrapper to contain everything */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Main content should take up all available space */
+.main-content {
+    flex: 1; /* Pushes the footer to the bottom */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Background Image */
+body {
+    background-image: url('Images/quizback.jpg'); /* Ensure the image path is correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: white;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Left Section (Logo & Navigation) */
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo */
+.navbar .logo img {
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+}
+
+/* Navbar Links */
+.navbar nav ul {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar nav ul li a {
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* Authentication Buttons */
+.auth-buttons button {
+    margin-left: 5px;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.login {
+    background: white;
+    border: 1px solid black;
+}
+
+.register {
+    background: black;
+    color: white;
+}
+
+/* Quiz Container */
+.quiz-container {
+    text-align: center;
+    padding: 40px;
+    width: 500px;
+    background: rgba(231, 224, 224, 0.7);
+    color: black;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+}
+
+/* Form Elements */
+.quiz-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Labels */
+.quiz-container label {
+    text-align: left;
+    margin: 12px 0 6px;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
+/* Dropdown Select */
+.quiz-container select {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Image Preview */
+.image-preview-container {
+    margin-top: 10px;
+}
+
+#preview-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    display: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Submit Button */
+.quiz-container button {
+    padding: 12px 20px;
+    font-size: 18px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.quiz-container button:hover {
+    background: #333;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #111;
+    color: white;
+}
+
+/* Footer Links */
+.footer-left p a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a i {
+    font-size: 24px;
+    color: white;
+}

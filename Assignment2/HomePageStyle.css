@@ -1,0 +1,179 @@
+/* Basic Reset */
+body, h2, p, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background: white;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Left Section (Logo & Navigation) */
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo */
+.navbar .logo img {
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+}
+
+/* Navbar Links */
+.navbar nav ul {
+    display: flex;
+    gap: 12px;
+}
+
+.navbar nav ul li a {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Authentication Buttons */
+.auth-buttons button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.login {
+    background: white;
+    border: 1px solid black;
+}
+
+.register {
+    background: black;
+    color: white;
+}
+
+/* Content Section */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    background: url('Images/background.jpg') center/cover no-repeat;
+    height: 75vh;
+    position: relative;
+}
+
+/* Advice Section */
+.advice-section {
+    margin-bottom: 400px;
+    font-size: 1.7em;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Quiz Section */
+.quiz-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 2em;
+}
+
+/* Rounded Quiz Button */
+.quiz-btn {
+    padding: 12px 24px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.quiz-btn:hover {
+    background: #333;
+}
+
+/* Lookbook Section */
+.lookbook-container {
+    position: absolute;
+    bottom: 50px;
+    left: 80%;
+    transform: translateX(-50%);
+}
+
+.lookbook-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.lookbook-btn:hover {
+    background: #333;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #111;
+    color: white;
+}
+
+/* Left: Terms & Contact */
+.footer-left p a {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+/* Right: Social Media Icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: inline-block;
+    text-decoration: none;
+    background: white;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.social-icons a i {
+    font-size: 24px; /* Increased size for visibility */
+    color: black;
+}
+
+.social-icons a:hover {
+    background: #444;
+}
+
+.social-icons a:hover i {
+    color: white;
+}

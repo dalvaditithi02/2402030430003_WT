@@ -1,0 +1,192 @@
+/* Basic Reset */
+body, h2, p, ul, li, a, button, input {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, sans-serif;
+}
+
+/* Background Image for the Chat Container */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    min-height: 70vh;
+    background: url('Images/outfitback.jpeg') no-repeat center center;
+    background-size: cover;
+    
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background: white; /* Kept navbar white for clarity */
+    border-bottom: 2px solid #ddd;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+}
+
+.navbar nav ul {
+    display: flex;
+    gap: 12px;
+}
+
+.navbar nav ul li a {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.auth-buttons button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.login {
+    background: white;
+    border: 1px solid black;
+}
+
+.register {
+    background: black;
+    color: white;
+}
+
+
+/* Chat Box */
+.chat-box {
+    width: 60%;
+    max-width: 600px;
+    height: 400px;
+    overflow-y: auto;
+    border-radius: 10px;
+    background: whitesmoke; /* Keeping background for readability */
+    color: black;
+    padding: 10px;
+}
+
+/* Chat Messages */
+.chat-message {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.chat-message.bot {
+    justify-content: flex-start;
+}
+
+.chat-message.user {
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.bot-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Chat Input */
+.chat-input {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.chat-input input {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.chat-input button {
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.chat-input button:hover {
+    background: #333;
+}
+
+/* Outfit Images */
+.outfit-images {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.outfit-images img {
+    width: 80px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #111;
+    color: white;
+}
+
+.footer-left p a {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: inline-block;
+    text-decoration: none;
+    background: white;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.social-icons a i {
+    font-size: 24px;
+    color: black;
+}
+
+.social-icons a:hover {
+    background: #444;
+}
+
+.social-icons a:hover i {
+    color: white;
+}
